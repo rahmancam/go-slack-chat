@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 function ChannelList({ channels, setChannel }) {
     return (
-        <ul>
+        <ul className="list-unstyled">
             {channels.map(chan => (
                 <Channel key={chan.id} channel={chan} setChannel={setChannel} />
             ))}

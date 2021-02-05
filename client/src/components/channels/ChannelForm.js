@@ -12,7 +12,13 @@ function ChannelForm({ addChannel }) {
     }
     return (
         <form onSubmit={onSubmit}>
-            <input type="text" value={channel} onChange={(e) => setChannel(e.target.value)} placeholder="Add New Channel..." />
+            <div className="form-group">
+                <input type="text"
+                    className="form-control"
+                    value={channel}
+                    onChange={(e) => setChannel(e.target.value)}
+                    placeholder="Add New Channel..." />
+            </div>
         </form>
     );
 }

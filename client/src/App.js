@@ -16,13 +16,14 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <h3>Active channel - {activeChannel.name}</h3>
-      <ChannelSection
-        channels={channels}
-        setChannel={setChannel}
-        addChannel={addChannel}
-      />
+    <div className="app">
+      <div className="nav">
+        <ChannelSection
+          channels={channels}
+          setChannel={setChannel}
+          addChannel={addChannel}
+        />
+      </div>
     </div>
   );
 }

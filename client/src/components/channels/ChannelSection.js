@@ -5,10 +5,16 @@ import ChannelList from './ChannelList';
 
 function ChannelSection(props) {
     return (
-        <div>
-            <ChannelList {...props} />
-            <ChannelForm {...props} />
+        <div className="support panel panel-primary">
+            <div className="panel-heading">
+                <strong>Channels</strong>
+            </div>
+            <div className="panel-body channels">
+                <ChannelList {...props} />
+                <ChannelForm {...props} />
+            </div>
         </div>
+
     );
 }
 
